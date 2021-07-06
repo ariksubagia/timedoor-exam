@@ -1,0 +1,107 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+html,body{
+    height:100%;
+}
+
+html{
+    font-size:15px;
+}
+
+body{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size:1.3rem;
+}
+
+.wrapper{
+    display:flex;
+    flex-direction: column;
+    gap:30px;
+    width:1000px;
+    padding:20px 0;
+}
+
+.section{
+    display:block;
+}
+
+.section .section-title{
+    display:block;
+    font-size: 1.5rem;
+    margin-bottom:15px;
+    font-weight: bold;
+}
+
+.pizzas{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:10px;
+}
+
+.pizzas .pizza{
+    width:300px;
+    border:1px solid #ccc;
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom:10px;
+}
+
+.pizzas .pizza .pizza-image{
+    width:300px;
+    height: 160px;
+    overflow: hidden;
+}
+
+.pizzas .pizza .pizza-image img{
+    position:relative;
+    width:100%;
+}
+
+.pizzas .pizza .pizza-name,
+.pizzas .pizza .pizza-price,
+.pizzas .pizza .indicator{
+    text-align:center;
+}
+
+.sizes{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:20px;
+}
+
+.sizes .size{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:30px;
+    border:1px solid #ccc;
+}
+
+.toppings{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:30px;
+}
+
+.toppings .topping{
+    width: 300px;
+}
+
+.toppings .topping label span{
+    margin-left:10px;
+}
+
+.price-section{
+    border-top:1px solid #999;
+    padding-top:10px;
+}
