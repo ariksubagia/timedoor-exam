@@ -95,7 +95,7 @@ function calculatePrice(){
         total +=  input.pizza.price;
     }
 
-    if( input.size ){
+    if( input.size && input.pizza ){
         total += input.size.reducer;
     }
 
