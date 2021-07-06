@@ -105,7 +105,7 @@ function calculatePrice(){
         }
     }
 
-    return total;
+    return total < 0 ? 0 : total;
 }
 
 function selectPizza( pizza ){
